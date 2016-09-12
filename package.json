@@ -1,0 +1,23 @@
+{
+  "name": "tslint-junit-formatter",
+  "version": "1.0.0",
+  "description": "JUnit XML formatter for TSlint.",
+  "main": "formatters/junitFormatter.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tslint",
+    "junit",
+    "formatter"
+  ],
+  "author": "Josef Krentz",
+  "license": "MIT",
+  "peerDependencies": {
+    "tslint": "^3.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^1.8.10"
+  }
+}
