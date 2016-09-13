@@ -5,7 +5,12 @@
   "main": "formatters/junitFormatter.js",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/GenoLogics-OpenSource/tslint-junit-formatter"
   },
   "keywords": [
     "tslint",
@@ -14,6 +19,10 @@
   ],
   "author": "Josef Krentz",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GenoLogics-OpenSource/tslint-junit-formatter/issues"
+  },
+  "homepage": "https://github.com/GenoLogics-OpenSource/tslint-junit-formatter#readme",
   "peerDependencies": {
     "tslint": "^3.0.0"
   },
