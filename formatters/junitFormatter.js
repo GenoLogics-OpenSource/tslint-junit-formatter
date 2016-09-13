@@ -56,8 +56,8 @@ var Formatter = (function (_super) {
         var _this = this;
         var xml = [];
         xml.push("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
+        xml.push("<testsuites>");
         if (failures.length > 0) {
-            xml.push("<testsuites>");
             xml.push(this.testsuiteStartXML(failures));
             xml = xml.concat(failures.map(function (failure) { return _this.testcaseXML(failure); }));
             xml.push("</testsuite>");

@@ -56,12 +56,14 @@ export class Formatter extends Lint.Formatters.AbstractFormatter {
         var xml = [];
 
         xml.push("<?xml version=\"1.0\" encoding=\"utf-8\"?>");
+        xml.push("<testsuites>");
+
         if (failures.length > 0) {
-            xml.push("<testsuites>");
             xml.push(this.testsuiteStartXML(failures));
             xml = xml.concat(failures.map(failure => this.testcaseXML(failure)));
             xml.push("</testsuite>");
         }
+
         xml.push("</testsuites>");
         return xml.join('\n');
     }
