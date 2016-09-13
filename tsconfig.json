@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "formatters"
+  },
+  "files": [
+    "src/junitFormatter.ts"
+  ]
+}
