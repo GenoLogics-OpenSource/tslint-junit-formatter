@@ -24,9 +24,9 @@
   },
   "homepage": "https://github.com/GenoLogics-OpenSource/tslint-junit-formatter#readme",
   "peerDependencies": {
-    "tslint": "^3.0.0"
+    "tslint": "^4.0.0"
   },
   "devDependencies": {
-    "typescript": "^1.8.10"
+    "typescript": "^2.0.10"
   }
 }
