@@ -1,6 +1,6 @@
 {
   "name": "tslint-junit-formatter",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "JUnit XML formatter for TSlint.",
   "main": "formatters/junitFormatter.js",
   "scripts": {
@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/GenoLogics-OpenSource/tslint-junit-formatter#readme",
   "peerDependencies": {
-    "tslint": "^3.0.0"
+    "tslint": "^4.0.0"
   },
   "devDependencies": {
     "typescript": "^1.8.10"

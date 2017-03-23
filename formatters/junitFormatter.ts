@@ -1,5 +1,5 @@
 import * as ts from "typescript";
-import * as Lint from "tslint/lib/lint";
+import * as Lint from "tslint";
 
 /*
  * TSLint formatter that adheres to the JUnit XML specification.
