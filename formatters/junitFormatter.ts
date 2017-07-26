@@ -61,6 +61,8 @@ export class Formatter extends Lint.Formatters.AbstractFormatter {
             xml.push(this.testsuiteStartXML(failures));
             xml = xml.concat(failures.map(failure => this.testcaseXML(failure)));
             xml.push("</testsuite>");
+        }else {
+            xml.push("<testsuite errors=\"0\" failures=\"0\" hostname=\"\" name=\"Check errors\" tests=\"1\" time=\"1\" timestamp=\"\"><testcase classname=\"\" name=\"check success\" time=\"1\" /></testsuite>");
         }
 
         xml.push("</testsuites>");
