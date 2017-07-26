@@ -12,6 +12,9 @@ export const formatterTests: NodeUnit.ITestGroup = {
         const expected = dedent(`
             <?xml version="1.0" encoding="utf-8"?>
             <testsuites>
+            <testsuite time="0" tests="1" skipped="0" errors="0" failures="0" package="org.tslint" name="tslint.xml">
+            <testcase time="0" name="success"/>
+            </testsuite>
             </testsuites>
         `);
         test.equal(output, expected);

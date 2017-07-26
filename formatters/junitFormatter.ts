@@ -49,6 +49,13 @@ export class Formatter extends Lint.Formatters.AbstractFormatter {
     }
 
     /**
+     * Generate a <testsuite> element that represents no failures
+     */
+    private successTestSuiteXML(): string {
+        return `<testsuite time="0" tests="1" skipped="0" errors="0" failures="0" package="org.tslint" name="tslint.xml">\n<testcase time="0" name="success"/>\n</testsuite>`;
+    }
+
+    /**
      * Transform lint failure to JUnit XML format
      */
     public format(failures: Lint.RuleFailure[]): string {
@@ -61,8 +68,8 @@ export class Formatter extends Lint.Formatters.AbstractFormatter {
             xml.push(this.testsuiteStartXML(failures));
             xml = xml.concat(failures.map(failure => this.testcaseXML(failure)));
             xml.push("</testsuite>");
-        }else {
-            xml.push("<testsuite errors=\"0\" failures=\"0\" hostname=\"\" name=\"Check errors\" tests=\"1\" time=\"1\" timestamp=\"\"><testcase classname=\"\" name=\"check success\" time=\"1\" /></testsuite>");
+        } else {
+            xml.push(this.successTestSuiteXML());
         }
 
         xml.push("</testsuites>");
