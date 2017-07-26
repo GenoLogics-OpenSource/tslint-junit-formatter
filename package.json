@@ -1,6 +1,6 @@
 {
   "name": "tslint-junit-formatter",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "JUnit XML formatter for TSlint.",
   "main": "formatters/junitFormatter.js",
   "scripts": {
