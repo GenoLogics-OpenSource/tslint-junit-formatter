@@ -1,2 +1,3 @@
 tsconfig.json
 formatters/*.ts
+formatters/*.test.js
