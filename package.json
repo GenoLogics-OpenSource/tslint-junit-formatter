@@ -1,11 +1,11 @@
 {
   "name": "tslint-junit-formatter",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "description": "JUnit XML formatter for TSlint.",
   "main": "formatters/junitFormatter.js",
   "scripts": {
     "build": "tsc",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "nodeunit formatters/junitFormatter.test.js",
     "prepublish": "npm run build"
   },
   "repository": {
@@ -27,8 +27,12 @@
     "tslint": "^5.0.0"
   },
   "devDependencies": {
-    "@types/node": "^7.0.16",
+    "@types/dedent": "^0.7.0",
     "@types/es6-shim": "^0.31.34",
+    "@types/node": "^7.0.16",
+    "@types/nodeunit": "^0.0.30",
+    "dedent-js": "^1.0.1",
+    "nodeunit": "^0.11.1",
     "typescript": "^2.3.0"
   }
 }
